@@ -18,12 +18,7 @@ class Soldier {
   createSoldier() {
     let soldierDiv = document.createElement("div");
     soldierDiv.id = this.id;
-    /* Replace this with css class */
-    soldierDiv.style.width = "50px";
-    soldierDiv.style.height = "50px";
-    soldierDiv.style.backgroundColor = "blue";
-    soldierDiv.style.position = "absolute";
-    /* Replace this with css class */
+    soldierDiv.classList.add("soldierDiv");
     document.body.appendChild(soldierDiv);
   }
 
