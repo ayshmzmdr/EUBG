@@ -2,6 +2,7 @@ const boxID = [];
 
 for (let i = 0; i < 9; i++) {
   boxID[i] = document.createElement("button");
+  boxID[i].disabled;
   boxID[i].id = `box${i}`;
   boxID[i].classList.add("box");
   document.body.prepend(boxID[i]);
@@ -17,7 +18,7 @@ document.body.prepend(pl1);
 
 for (let i = 0; i < cardName.length; i++) {
   card[i] = document.createElement("button");
-  card[i].disabled;
+  card[i].style.backgroundImage=`url(../assets/${cardName[i]}.png)`;
   card[i].id = `card${i}`;
   card[i].classList.add("card");
   document.body.prepend(card[i]);
