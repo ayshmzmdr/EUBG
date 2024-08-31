@@ -1,15 +1,15 @@
 import Soldier from "./soldier.js";
 
-class Giant extends Soldier {
+class Zombie extends Soldier{
   constructor(id, posx, posy) {
-    super(id, posx, posy);
+    super(id,posx,posy);
     this.position = 0;
     this.range = 1;
-    this.speed = 2;
-    this.priority = 2;
-    this.attack = 8.0;
-    this.hitpoints = 25.0;
-    this.attack_cooldown = 1.0;
+    this.speed = 8;
+    this.priority = 1;
+    this.attack = 7.0;
+    this.hitpoints = 18.0;
+    this.attack_cooldown = 0.5;
     this.alive = true;
     this.moving = false;
     this.friendly = false;
@@ -28,4 +28,4 @@ class Giant extends Soldier {
   }*/
 }
 
-export default Giant;
+export default Zombie;
