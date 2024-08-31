@@ -1,5 +1,5 @@
-import Soldier from "./soldiers/soldier.js";
-import Board from "./board";
+import Soldier from "soldiers/soldier.js";
+import Board from "board.js";
 
 class Game {
   constructor() {
