@@ -1,10 +1,12 @@
-import Soldier from "soldiers/soldier.js";
-import Board from "board.js";
+import Soldier from "./soldiers/soldier.js";
+import Board from "./board.js";
+import Card from "./card.js";
 
 class Game {
   constructor() {
     this.gameBoard = new Board(10, 10);
     this.soldiers = [];
+    this.startGame()
   }
 
   placeEnemies() {
