@@ -9,7 +9,7 @@ for (let i = 0; i < 9; i++) {
 }
 boxID[4].classList.add("middleBox");
 
-const cardName = ["Giant", "Archer", "Zombie"];
+const cardName = ["giant", "archer", "zombie"];
 const card = [];
 
 const pl1 = document.createElement("button");
@@ -18,7 +18,7 @@ document.body.prepend(pl1);
 
 for (let i = 0; i < cardName.length; i++) {
   card[i] = document.createElement("button");
-  card[i].style.backgroundImage=`url(../assets/${cardName[i]}.png)`;
+  card[i].style.backgroundImage=`url(../assets/images/${cardName[i]}.png)`;
   card[i].id = `card${i}`;
   card[i].classList.add("card");
   document.body.prepend(card[i]);
