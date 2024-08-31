@@ -1,4 +1,3 @@
-import Game from "./game.js"
+import Game from "./game.js";
 
-console.log("Loaded index.js file")
-const g = new Game()
+const game = new Game();

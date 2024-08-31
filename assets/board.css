@@ -45,9 +45,8 @@ body{
     border-radius: 25px;
     border: none;
     background-color: hsl(180, 100%, 80%);
-    position: relative;
-    left:550px;
-    top:550px;
+    display: flexbox;
+    flex-direction: row;
 }
 .card:hover{
     border: 1px solid black;

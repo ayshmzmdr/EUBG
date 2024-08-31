@@ -1,8 +1,8 @@
 import Soldier from "./soldier.js";
 
-class Giant extends Soldier{
+class Giant extends Soldier {
   constructor(id, posx, posy) {
-    super(id,posx,posy);
+    super(id, posx, posy);
     this.position = 0;
     this.range = 0;
     this.speed = 0;

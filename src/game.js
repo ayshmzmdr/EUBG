@@ -5,15 +5,35 @@ import Card from "./card.js";
 class Game {
   constructor() {
     this.gameBoard = new Board(10, 10);
+    this.gameClockTickMiliseconds = 1000;
     this.soldiers = [];
-    this.startGame()
+    this.cards = [
+      new Card("giant", "Giant", 1),
+      new Card("archer", "Archer", 1),
+      new Card("zombie", "Zombie", 1),
+    ];
+    this.gameBoard.draw();
+    this.placeCards();
+    this.startGame();
+  }
+
+  startGame() {
+    setInterval(() => {
+      this.gameLoopIteration();
+    }, this.gameClockTickMiliseconds);
+  }
+
+  placeCards() {
+    this.cards.forEach((card) => {
+      card.draw();
+    });
   }
 
   placeEnemies() {
     /* TODO after soldiers creation */
   }
 
-  addFriendlySoldier(soldier) {
+  deplouyFriendlySoldier(soldier) {
     this.soldiers.push(soldier);
   }
 
@@ -31,14 +51,6 @@ class Game {
     for (let soldier = 0; soldier < this.soldiers.length; soldier++) {
       soldier.draw();
     }
-  }
-
-  startGame() {
-    this.gameBoard.draw();
-
-    setInterval(() => {
-      this.gameLoopIteration();
-    }, 1000);
   }
 }
 

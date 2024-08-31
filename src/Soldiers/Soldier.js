@@ -37,6 +37,7 @@ class Soldier {
     this.posy = newPosy;
     this.draw(); // Replace with animateMove() once implemented
   }
+
   takeDamage(damage) {
     this.hitpoints = this.hitpoints - damage;
     if (this.hitpoints <= 0) {
