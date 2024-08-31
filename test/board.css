@@ -10,6 +10,11 @@ body{
     position:relative;
     right:178px;
     top:301px;
+    box-shadow: 0px -5px 7000px black, 0px 5px 7000px black;
+}
+
+.middleBox{
+    background-color: hsl(55, 100%, 30%);
 }
 
 .pl1{
