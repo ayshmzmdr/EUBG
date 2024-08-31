@@ -1,7 +1,7 @@
-import Soldier from "../src/Soldiers/Soldier.js"
+import Giant from "../src/soldiers/giant.js"
 
 window.onload = () => {
-    const s1 = new Soldier('soldier1', 100, 100); 
+    const s1 = new Giant('soldier1', 100, 100); 
     s1.draw(); 
     
     setInterval(() => {
